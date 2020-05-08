@@ -1,9 +1,11 @@
 #pragma once
 #include "gameNode.h"
+#include "bullet.h"
 class bossClass : public gameNode
 {
 private:
 	struct_Boss boss;
+	missile* bulletPt;
 
 	float SLOW_inBoss;
 	float SLOW_ratio_inBoss;
@@ -43,6 +45,9 @@ public:
 	{
 		boss.state = B_HURTRECOVER;
 		boss.currentPattern++;
+		boss.gravity = 0;
+		boss.isWallJump = false;
+		boss.wallJumpCnt = 0;
 		boss.isRight = _set;
 		boss.isRight ? boss.frameIdx = 0 : boss.frameIdx = 10;
 	}
@@ -98,6 +103,9 @@ public:
 		boss.aimAngle = _angle;
 	}
 
+	void bossPixelCollision();
+
+	void setBossState(enum_BossState _state);
 
 	bossClass() {}
 	~bossClass() {}

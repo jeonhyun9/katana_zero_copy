@@ -101,6 +101,8 @@ public:
 		camera.height = _height;
 	}
 
+	void setClear() { player.clear = true; }
+
 	void setJump() { JUMP = true; }
 	void setBatteryRemain(bool _set) { player.isBatteryRemain = _set; }
 

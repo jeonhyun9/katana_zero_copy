@@ -12,6 +12,7 @@ HRESULT stage4::init()
 
 	StopCnt = 0;
 	warningCnt = 0;
+
 	enemyIdx = -1;
 	stageCnt = 0;
 
@@ -53,8 +54,6 @@ HRESULT stage4::init()
 
 
 	itemPt->generateItem(2946, 643, I_BOTTLE);
-
-
 
 	return S_OK;
 }
@@ -451,7 +450,7 @@ void stage4::render()
 void stage4::toNextStage()
 {
 	DATA->setClear(STAGE4_CLEARED);
-	SCENEMANAGER->loadScene("보스스테이지");
+	SCENEMANAGER->loadScene("스테이지5");
 	this->saveClearedStage();
 }
 
@@ -624,12 +623,20 @@ void stage4::stagePattern4()
 				_y2 = RANDOM->Range(925, 960);
 				effectPt->generateExplosion(_x2, _y2, -j);
 			}
+			stageCnt = 0;
 			bossPt->addPattern();
 		}
 	}
 
-	
-
+	if (bossPt->getBoss().currentPattern == 12)
+	{
+		stageCnt++;
+		if (stageCnt > 160)
+		{
+			playerPt->setClear();
+		}
+		
+	}
 	
 }
 

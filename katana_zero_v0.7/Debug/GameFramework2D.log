@@ -1,0 +1,33 @@
+﻿  bossClass.cpp
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.h(64,14): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.h(66,68): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.h(74,16): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(150,64): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(150,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(156,31): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(157,30): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(158,31): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(159,30): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(186,50): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(186,108): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(190,98): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(190,63): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(193,96): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(193,61): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(194,81): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(194,46): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(199,99): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(199,64): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(202,97): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(202,62): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(203,65): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(203,46): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(277,37): warning C4244: '*=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(361,37): warning C4244: '*=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(385,13): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(387,67): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(403,13): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(405,67): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(421,13): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\2.소스트리_카타나제로\katana_zero_v0.7\bossClass.cpp(424,70): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GameFramework2D.vcxproj -> E:\2.소스트리_카타나제로\katana_zero_v0.7\Debug\A1_KATANA_ZERO.exe

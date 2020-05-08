@@ -135,6 +135,7 @@ void loadingScene::loadingImage()
 	_loading->loadFrameImage("effect_reflect", "images/effect/effect_reflect_6x2.bmp", 684, 217, 6, 2);
 	_loading->loadFrameImage("effect_reflect2", "images/effect/effect_reflect_6x2.bmp", 684, 217, 6, 2);
 	_loading->loadFrameImage("effect_gunspark", "images/effect/effect_gunspark_4x2.bmp", 392,156, 4, 2);
+	_loading->loadImage("effect_gunspark_big", "images/effect/effect_gunspark_big.bmp", 68,76);
 	_loading->loadFrameImage("effect_explosion", "images/effect/effect_explosion_12x1.bmp", 2112,224, 11, 1);
 	_loading->loadFrameImage("effect_floor", "images/effect/effect_floor_2x1.bmp", 128,64, 2, 1);
 	_loading->loadImage("effect_hit_lazer", "images/effect/effect_hit_lazer.bmp", 1000, 4);
@@ -187,12 +188,17 @@ void loadingScene::loadingImage()
 
 	/*보스*/
 	//_loading->loadFrameImage("boss_headhunter_aim", "images/boss/boss_headhunter_aim_19x2.bmp", 1482, 208, 19, 2);
-	_loading->loadFrameImage("boss_headhunter_aim", "images/boss/boss_headhunter_aim_1x2.bmp", 78, 208, 1, 2);
-	_loading->loadFrameImage("boss_headhunter_idle", "images/boss/boss_headhunter_idle_12x2.bmp", 528, 176, 12, 2);
-	_loading->loadFrameImage("boss_headhunter_hurt_recover", "images/boss/boss_headhunter_hurt_recover_10x2.bmp", 1400, 212, 10, 2);
-	_loading->loadFrameImage("boss_headhunter_drawgun", "images/boss/boss_headhunter_drawgun_8x2.bmp",608, 172, 8, 2);
+	_loading->loadFrameImage("boss_aim", "images/boss/boss_headhunter_aim_1x2.bmp", 78, 208, 1, 2);
+	_loading->loadFrameImage("boss_idle", "images/boss/boss_headhunter_idle_12x2.bmp", 528, 176, 12, 2);
+	_loading->loadFrameImage("boss_recover", "images/boss/boss_headhunter_hurt_recover_13x2.bmp", 1820, 212, 13, 2);
+	_loading->loadFrameImage("boss_drawgun", "images/boss/boss_headhunter_drawgun_8x2.bmp",608, 172, 8, 2);
 	_loading->loadImage("boss_aimlazer", "images/boss/boss_aimlazer.bmp", 2000,3);
 	_loading->loadFrameImage("boss_lazer", "images/boss/boss_lazer_1x5.bmp", 2000, 250, 1, 5);
+	_loading->loadFrameImage("boss_jump", "images/boss/boss_jump_1x2.bmp", 54, 176, 1, 2);
+	_loading->loadFrameImage("boss_prejump", "images/boss/boss_prejump_3x2.bmp", 198, 172, 3, 2);
+	_loading->loadFrameImage("boss_wallgrab", "images/boss/boss_wallgrab_3x2.bmp", 180, 172, 3, 2);
+	_loading->loadFrameImage("boss_walljump", "images/boss/boss_walljump_7x2.bmp", 756, 248, 7, 2);
+	_loading->loadFrameImage("boss_land", "images/boss/boss_land_4x2.bmp", 264, 172, 4, 2);
 
 	////로딩이너무 빠르게 진행되서 천천히 돌아가도록 테스트용으로 만들기
 	//for (int i = 0; i < 100; i++)

@@ -54,6 +54,10 @@ void titleScene::update()
 				DATA->setClear(STAGE3_CLEARED);
 				SCENEMANAGER->loadScene("스테이지4");
 				break;
+			case STAGE4_CLEARED:
+				DATA->setClear(STAGE4_CLEARED);
+				SCENEMANAGER->loadScene("스테이지5");
+				break;
 			}
 		}
 	}

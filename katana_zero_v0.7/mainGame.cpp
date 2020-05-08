@@ -20,6 +20,7 @@ HRESULT mainGame::init()
 	SCENEMANAGER->addScene("스테이지2", new stage2);
 	SCENEMANAGER->addScene("스테이지3", new stage3);
 	SCENEMANAGER->addScene("스테이지4", new stage4);
+	SCENEMANAGER->addScene("스테이지5", new stage5);
 
 	/*현재씬 설정*/
 	SCENEMANAGER->loadScene("로딩화면");

@@ -20,6 +20,11 @@ enum enum_BossState
 	B_AIM,
 	B_HURTRECOVER,
 	B_DRAWGUN,
+	B_PREJUMP,
+	B_JUMP,
+	B_WALLGRAB,
+	B_WALLJUMP,
+	B_LAND,
 };
 
 enum enum_PlayerState
@@ -270,6 +275,7 @@ struct struct_Enemy
 	bool isDoorReached;
 
 	float doorReachedX;
+	
 
 	bool isPlayerRight;
 	bool isSplatted;
@@ -381,18 +387,35 @@ struct struct_Boss
 	image* aimLazerImg;
 	image* lazerImg;
 	image* drawGunImg;
+	image* jumpImg;
+	image* wallJumpImg;
+	image* wallGrabImg;
+	image* preJumpImg;
+	image* landImg;
+
 
 	enum_BossState state;
 
 	bool isRight;
-	bool isCrahsedLeft;
-	bool isCrahsedRight;
-	bool isGenrateCoolTime;
+	bool isCrashedLeft;
+	bool isCrashedRight;
+	bool isCrashedBottom;
 
+	bool isGenrateCoolTime;
+	bool isFire;
+
+	bool isWallJump;
+	int wallJumpCnt;
 	
 	int currentPattern;
 
+	float gravity;
 	float speed;
+	float jumpSpeed;
+	float wallJumpSpeed;
+	float moveAngle;
+	float shootAngle;
+	float gunAngle;
 	float x;
 	float y;
 	

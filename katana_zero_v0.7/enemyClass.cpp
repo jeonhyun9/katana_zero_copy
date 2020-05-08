@@ -487,7 +487,7 @@ void enemyClass::render()
 				if (vEnemy[i].frameY == 0)
 				{
 					vEnemy[i].leftarm_R->rotateRender(getMemDC(), vEnemy[i].rc.left + 5, vEnemy[i].rc.top + 23, vEnemy[i].angleToPlayer - PI);
-					vEnemy[i].aimImg_R->render(getMemDC(), vEnemy[i].rc.left - 30, vEnemy[i].rc.top - 3);
+					vEnemy[i].aimImg_R->render(getMemDC(), vEnemy[i].rc.left - 30, vEnemy[i].rc.top);
 					vEnemy[i].gunImg_R->rotateRender(getMemDC(), vEnemy[i].rc.right - 25, vEnemy[i].rc.top + 20, vEnemy[i].angleToPlayer - PI);
 					vEnemy[i].rightarm_R->rotateRender(getMemDC(), vEnemy[i].rc.left - 10, vEnemy[i].rc.top + 20, vEnemy[i].angleToPlayer - PI);
 					if (vEnemy[i].isFire)vEnemy[i].gunsparkImg->rotateFrameRender(getMemDC(), vEnemy[i].gunsparkX, vEnemy[i].gunsparkY, vEnemy[i].frameIdx, vEnemy[i].frameY, vEnemy[i].angleToPlayer - PI);
@@ -495,7 +495,7 @@ void enemyClass::render()
 				else
 				{
 					vEnemy[i].leftarm_L->rotateRender(getMemDC(), vEnemy[i].rc.left - 20, vEnemy[i].rc.top + 23, vEnemy[i].angleToPlayer);
-					vEnemy[i].aimImg_L->render(getMemDC(), vEnemy[i].rc.left - 30, vEnemy[i].rc.top - 3);
+					vEnemy[i].aimImg_L->render(getMemDC(), vEnemy[i].rc.left - 30, vEnemy[i].rc.top);
 					vEnemy[i].gunImg_L->rotateRender(getMemDC(), vEnemy[i].rc.left - 20, vEnemy[i].rc.top + 20, vEnemy[i].angleToPlayer);
 					vEnemy[i].rightarm_L->rotateRender(getMemDC(), vEnemy[i].rc.left - 5, vEnemy[i].rc.top + 20, vEnemy[i].angleToPlayer);
 					if (vEnemy[i].isFire)vEnemy[i].gunsparkImg->rotateFrameRender(getMemDC(), vEnemy[i].gunsparkX, vEnemy[i].gunsparkY, vEnemy[i].frameIdx, vEnemy[i].frameY, vEnemy[i].angleToPlayer);

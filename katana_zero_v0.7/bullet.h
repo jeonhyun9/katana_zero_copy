@@ -74,7 +74,7 @@ public:
 	void render();
 
 	//ÃÑ¾Ë¹ß»ç
-	void fire(float x, float y);
+	void fire(float x, float y, float _angle);
 	//ÃÑ¾Ë¹«ºê
 	void move();
 

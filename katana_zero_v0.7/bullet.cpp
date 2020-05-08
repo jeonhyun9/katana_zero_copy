@@ -133,8 +133,8 @@ HRESULT missile::init(int bulletMax, float range)
 		//구조체의 변수들의 값을 한번에 0으로 초기화 시켜준다
 		ZeroMemory(&bullet, sizeof(tagBullet));
 		bullet.bulletImage = new image;
-		bullet.bulletImage->init("Images/missile.bmp", 26, 124, true, RGB(255, 0, 255));
-		bullet.speed = 5.0f;
+		bullet.bulletImage->init("images/boss/boss_bullet.bmp", 68, 2, true, RGB(255, 0, 255));
+		bullet.speed = 14.0f;
 		bullet.fire = false;
 
 		//벡터에 담기
@@ -163,11 +163,12 @@ void missile::render()
 	for (int i = 0; i < _vBullet.size(); i++)
 	{
 		if (!_vBullet[i].fire) continue;
-		_vBullet[i].bulletImage->render(getMemDC(), _vBullet[i].rc.left, _vBullet[i].rc.top);
+		//Rectangle(getMemDC(),_vBullet[i].rc);
+		_vBullet[i].bulletImage->rotateRender(getMemDC(), _vBullet[i].rc.left, _vBullet[i].rc.top,_vBullet[i].angle);
 	}
 }
 
-void missile::fire(float x, float y)
+void missile::fire(float x, float y, float _angle)
 {
 	_viBullet = _vBullet.begin();
 	for (_viBullet; _viBullet != _vBullet.end(); ++_viBullet)
@@ -176,6 +177,7 @@ void missile::fire(float x, float y)
 		_viBullet->fire = true;
 		_viBullet->x = _viBullet->fireX = x;
 		_viBullet->y = _viBullet->fireY = y;
+		_viBullet->angle = _angle;
 		_viBullet->rc = RectMakeCenter(_viBullet->x, _viBullet->y,
 			_viBullet->bulletImage->getWidth(),
 			_viBullet->bulletImage->getHeight());
@@ -189,7 +191,8 @@ void missile::move()
 	for (_viBullet; _viBullet != _vBullet.end(); ++_viBullet)
 	{
 		if (!_viBullet->fire) continue;
-		_viBullet->y -= _viBullet->speed;
+		_viBullet->y += -sinf(_viBullet->angle) * _viBullet->speed;
+		_viBullet->x += cosf(_viBullet->angle) * _viBullet->speed;
 		_viBullet->rc = RectMakeCenter(_viBullet->x, _viBullet->y,
 			_viBullet->bulletImage->getWidth(),
 			_viBullet->bulletImage->getHeight());
