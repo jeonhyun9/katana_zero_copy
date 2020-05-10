@@ -1,2 +1,0 @@
-E:\2.소스트리_카타나제로\katana_zero_v0.7\Debug\A1_KATANA_ZERO.exe
-E:\2.소스트리_카타나제로\katana_zero_v0.7\Debug\A1_KATANA_ZERO.pdb
