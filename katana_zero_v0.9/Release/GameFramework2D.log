@@ -1,6 +1,0 @@
-﻿  stdafx.cpp
-E:\2.소스트리_카타나제로\katana_zero_v0.8\commonMacroFunction.h(69,39): error C2664: 'BOOL TextOutW(HDC,int,int,LPCWSTR,int)': 인수 4을(를) 'const char *'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
-E:\2.소스트리_카타나제로\katana_zero_v0.8\commonMacroFunction.h(69,21): message : 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\wingdi.h(5101,25): message : 'TextOutW' 선언을 참조하십시오.
-E:\2.소스트리_카타나제로\katana_zero_v0.8\allData.h(529,54): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-E:\2.소스트리_카타나제로\katana_zero_v0.8\allData.h(529,71): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
