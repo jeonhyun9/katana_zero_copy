@@ -88,7 +88,7 @@ void titleScene::update()
 			fade.isRender_back = true;
 			SOUNDMANAGER->stop("title");
 			SOUNDMANAGER->play("clear");
-			//DATA->setClear(NONE_CLEARED);
+			DATA->setClear(NONE_CLEARED);
 			//DATA->setClear(STAGE1_CLEARED);
 			//DATA->setClear(STAGE2_CLEARED);
 			//DATA->setClear(STAGE3_CLEARED);
